@@ -1,0 +1,59 @@
+@import url('http://fonts.cdnfonts.com/css/minecraft-4');
+#title {
+    color:#ffffff;
+    background-color:#3fff8c00;
+    font-family: 'Minecraftia', sans-serif;
+    font-size:60px;
+    font-weight:100px;
+}
+.headercenter {
+    padding: 60px;
+    text-align:left;
+    background: #ffffff;
+    color: white;
+    font-size: 30px;
+}
+.titleContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centertitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#logoimage {
+        border-radius:15px;
+        background: #3fff8c;
+        padding: 2.5px;
+}
+#head-selected:link, #head-selected:visited {
+    background-color: #3fff8c;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    border-radius:15px;
+    text-decoration: none;
+    display: inline-block;
+} 
+#head-selected:hover, #head-selected:active {
+    background-color: #00ec62;
+}
+.headernot:link, .headernot:visited {
+    background-color: #c4c4c4;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    border-radius:15px;
+    text-decoration: none;
+    display: inline-block;
+}
+.headernot:hover, .headernot:active {
+    background-color: #5f5f5f;
+}
+.header {
+    color:#3fff8c;
+    font-family:"Roboto", Roboto, Avenir, Helvetica, Arial,sans-serif;
+}
