@@ -7,11 +7,19 @@
     font-weight:100px;
 }
 .headercenter {
-    padding: 60px;
-    text-align:left;
-    background: #ffffff;
-    color: white;
-    font-size: 30px;
+    padding: 10px;
+    justify-content: space-between;
+    display:flex;
+}
+.listHeader{
+    text-decoration: none;
+}
+.nav_links {
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    
 }
 .titleContainer {
     position: relative;
