@@ -153,6 +153,19 @@ transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     align-items: center;
     justify-content: center;
 }
+.titleContainer2 {
+  position: relative;
+  text-align: center;
+  color: white;
+  background: url(images/backgroundlogo.png);
+  background-size:cover;
+  min-height: 40vh;
+  height:auto;
+  display:flex;
+  flex:auto;
+  align-items: center;
+  justify-content: center;
+}
 
 #logoimage {
         border-radius:15px;
