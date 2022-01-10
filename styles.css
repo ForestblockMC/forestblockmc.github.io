@@ -126,7 +126,6 @@ transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     font-size:60px;
     font-weight:100px;
 
-    margin: 0px;
 }
 .headercenter {
     display:flex;
@@ -178,6 +177,7 @@ transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     border-bottom:4px solid #c4c4c4;
     padding: 14px 25px;
     text-align: right;
+    margin:0px;
 
     text-decoration: none;
     display: inline-block;
@@ -189,6 +189,7 @@ transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     font-family:"Roboto", Roboto, Avenir, Helvetica, Arial,sans-serif;
     font-weight: bolder;
     left: 0;
+    margin-right: 10px;
     padding: 0.75em 1em;
     z-index: 10;
     display: flex;
