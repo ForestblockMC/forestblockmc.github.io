@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 *,*:before,*:after{
-    box-sizing:border-box
+    box-sizing:inherit;
 }
 body,h1,h2,h3,h4,p,ul[class],ol[class],li,figure,figcaption,blockquote,dl,dd{
     margin:0
@@ -18,6 +18,7 @@ body {
   display: grid;
   height: 100%;
   width: 100%;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   background: linear-gradient(315deg, #ffffff, #d7e1ec);
 }
@@ -88,8 +89,10 @@ transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 .wrapper .facebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
-  background-color: #3b5999;
-  color: #ffffff;
+    background-color: #3b5999;
+    color: #ffffff;
+    height: auto;
+    min-width: 0px;
 }
 
 .wrapper .twitter:hover,
@@ -215,33 +218,39 @@ transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     background: #ffffff;
     border-bottom:5px solid #c4c4c4 ;
     margin-right: 0px;
-
-}
-
-.staffRow {
-  background:rgb(255, 255, 255);
-  align-content: flex-start;
+    margin-top: 10px;
 
 }
 .staffColumn{
-  float:left;
-  box-sizing: border-box;
-  width: 300px;
-  align-content: flex-start;
-
-
-  margin: 10px;
+    float: left;
+    box-sizing: border-box;
+    width: 25%;
+    margin-bottom:16px;
+    padding:0 8px;
 }
+
+@media screen and (max-width: 650px) {
+  .staffColumn {
+    width: 100%;
+    display: block;
+  }
+}
+
 .staffCard {
   background:#00ec62;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin:1em;
-
-  min-width: 200px;
+  padding-bottom: 10px;
+  border-radius:10px;
+}
+.adminCard {
+  background:#ff4e4e;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
   border-radius:10px;
 }
 .staffContainer {
-  padding: 0 1px;
+    padding: 0 16px;
+    height: 0%;
 }
 .staffContainer::after, .staffRow::after {
   content: "";
@@ -262,4 +271,23 @@ transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   font-weight:bolder;
   font-family:"Roboto", Roboto, Avenir, Helvetica, Arial,sans-serif;
   text-align: center;
+}
+
+.hr5 {
+  border: 0;
+  border-top: medium double #CCC;
+  height: 1px;
+  overflow: visible;
+  padding: 0;
+  color: #CCC;
+  text-align: center;
+}
+.hr5::after {
+  content: "Executives";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.4em;
+  padding: 0 0.3em;
+  background: rgb(255, 255, 255);
 }
