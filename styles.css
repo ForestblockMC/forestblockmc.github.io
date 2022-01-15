@@ -297,6 +297,9 @@ transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   display: block;
   position: relative;
 }
+.staff-box ul{
+  margin-top: 100%;
+}
 .staff-box:after{
   content:'';
   opacity: 0;
@@ -341,4 +344,7 @@ transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 .staff-box a:hover li{
   color: #3fff8c;
   border:1px solid #3fff8c;
+}
+.staff-box:after, .staff-box ul, .staff-box ul li{
+  transition: all 0.5s ease-in-out 0s;
 }
