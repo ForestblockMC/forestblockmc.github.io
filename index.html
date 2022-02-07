@@ -22,15 +22,15 @@
     <body>
       <header class="header">    
         <div class="headercenter">
-            <a href="index.html"><img id="logoimage" src="images/logo.png" alt="Forestblock Logo" width="60"></a>
+            <a href="index.html" onclick="console.log('Home Button Pressed')"><img id="logoimage" src="images/logo.png" alt="Forestblock Logo" width="60"></a>
             <nav>
                 <ul class=nav_links>
-                    <li class="listHeader"><a id="head-selected" href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                    <li class="listHeader"><a href="about.html" class="headernot"><i class="far fa-address-card"></i> About</a></h4>
-                    <li class="listHeader"><a target="_blank" href="https://discord.com/invite/forestblock" class="headernot"><i class="fab fa-discord"></i> Discord</a></li>
-                    <li class="listHeader"><a target="_blank" href="https://discord.com/invite/forestblock" class="headernot"><i class='fas fa-bell'></i> Socials</a></li>
-                    <li class="listHeader"><a target="_blank" href="https://discord.com/invite/forestblock" class="headernot"><i class="fas fa-map"></i> Maps</a></li>
-                    <li class="listHeader"><a target="_blank" href="https://discord.com/invite/forestblock" class="headernot"><i class="fas fa-plus"></i> Wiki</a></li>
+                    <li class="listHeader"><a id="head-selected" onclick="console.log('Home Button Pressed')" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="listHeader"><a href="about.html" onclick="console.log('About Button Pressed')" class="headernot"><i class="far fa-address-card"></i> About</a></h4>
+                    <li class="listHeader"><a target="_blank" onclick="console.log('Discord Button Pressed')" href="https://discord.com/invite/forestblock" class="headernot"><i class="fab fa-discord"></i> Discord</a></li>
+                    <li class="listHeader"><a target="_blank" onclick="console.log('Socials Button Pressed')" href="https://discord.com/invite/forestblock" class="headernot"><i class='fas fa-bell'></i> Socials</a></li>
+                    <li class="listHeader"><a target="_blank" onclick="console.log('Maps Button Pressed')" href="https://discord.com/invite/forestblock" class="headernot"><i class="fas fa-map"></i> Maps</a></li>
+                    <li class="listHeader"><a target="_blank" onclick="console.log('Wiki Button Pressed')" href="https://wiki.forestblock.net/" class="headernot"><i class="fas fa-plus"></i> Wiki</a></li>
                 </ul>
             </nav>
         </div>
@@ -72,4 +72,5 @@
               </div>
         </footer>
     </body>
+    <script src="js/headers.js"></script>
 </html>
